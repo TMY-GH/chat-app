@@ -4,11 +4,6 @@
   display: flex;
 }
 
-li {
-  list-style: none;
-}
-
-
 
 
 /* --- サイドバー ---  */
@@ -31,7 +26,7 @@ li {
   text-decoration: none;
 }
 
-.new-room {
+.new-room a{
   color: deepskyblue;
   padding: 14px;
   border: 1px solid skyblue;
