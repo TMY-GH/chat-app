@@ -25,9 +25,10 @@ li {
   align-items: center;
 }
 
-.side-header h1 {
+.header-name a {
   font-size: 16px;
   color: #FAFAFA;
+  text-decoration: none;
 }
 
 .new-room {
