@@ -8,20 +8,9 @@ li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
 
-h1 {
-  font-size: 16px;
-  color: #FAFAFA;
-}
 
-input {
-  border: none;
-  outline: none;
-}
+
 /* --- サイドバー ---  */
 .side-bar {
   width: 300px;
@@ -34,6 +23,11 @@ input {
   display:flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.side-header h1 {
+  font-size: 16px;
+  color: #FAFAFA;
 }
 
 .new-room {
@@ -52,6 +46,11 @@ input {
 
 .room-list {
   padding-bottom: 40px;
+}
+
+.room-list a {
+  text-decoration: none;
+  color: white;
 }
 /* --- メイン画面 ---  */
 .main-chat {
@@ -115,7 +114,7 @@ input {
   background-color: #DDDDDD;
   padding: 20px 40px;
 }
- form {
+.form {
    height: 100%;
    display: flex;
  }
@@ -152,4 +151,9 @@ input {
 
 .hidden {
   display: none;
+}
+
+message-fotm input {
+  border: none;
+  outline: none;
 }
