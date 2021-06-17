@@ -1,0 +1,33 @@
+<div class='main-header'>
+  <div class='room-name'>
+    ChatRoom
+  </div>
+  <div class="destroy-room">
+    <a href="#">チャットを終了する</a>
+  </div>
+</div>
+<div class='main-chats'>
+  <ul class="message-lists">
+    <% 10.times do %>
+      <li class="message-list">
+        <div class='message-detail'>
+          <div class='message-user'>Nickname</div>
+          <div class="message-date">2020/02/02(Mon) 12:05</div>
+        </div>
+        <div class="message">Hello World!</div>
+      </li>
+    <% end %>
+  </ul>
+</div>
+<div class='main-footer'>
+  <form>
+    <div class='message-form'>
+      <input type="text" placeholder="type a message" class="text-message">
+      <label class="form-image">
+        <span class="image-file">画像</span>
+        <input type="file" class="hidden">
+      </label>
+    </div>
+    <input type="submit" value="送信" class="submit-btn">
+  </form>
+</div>
