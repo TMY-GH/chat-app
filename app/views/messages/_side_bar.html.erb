@@ -8,8 +8,10 @@
 </div>
 <div class='side-main'>
   <ul class="room-lists">
-    <% 10.times do %>
-      <li class="room-list"><a href="#">Room</a></li>
+    <% current_user.rooms.each do |room| %>
+      <li class="room-list">
+        <a href="#"><%= room.name %></a>
+      </li>
     <% end %>
   </ul>
 </div>
