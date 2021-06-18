@@ -20,14 +20,14 @@
   </ul>
 </div>
 <div class='main-footer'>
-  <div class="form">
+  <%= form_with(model: [@room, @message], local: true, class: "form") do |form| %>
     <div class='message-form'>
-      <input type="text" placeholder="type a message" class="text-message">
+      <%= form.text_field :content, placeholder: "type a message", class: "text-message" %>
       <label class="form-image">
         <span class="image-file">画像</span>
-        <input type="file" class="hidden">
+        <%= form.file_field :image, class: "hidden" %>
       </label>
     </div>
-    <input type="submit" value="送信" class="submit-btn">
-  </div>
+    <%= form.submit "送信", class: "submit-btn" %>
+  <% end %>
 </div>
